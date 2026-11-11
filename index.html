@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sonabee | Every sound counts. A calm phonics game for ages 5 to 9</title>
+<meta name="description" content="Sonabee is a calm, playful phonics game for children aged 5 to 9, made with dyslexic learners in mind. Trace a sound, build a word, say it aloud. Coming soon to iPhone and Android.">
+<meta name="theme-color" content="#F5A524">
+<meta property="og:title" content="Sonabee | Every sound counts.">
+<meta property="og:description" content="A calm, playful phonics game for children aged 5 to 9. Coming soon to iPhone and Android.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/app-icon-512.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/Lexend-ExtraBold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Sonabee, back to top"><img src="assets/img/icon-192.png" alt="" width="42" height="42">sonabee</a>
+    <nav aria-label="Main">
+      <ul class="nav-links">
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#calm">Calm by design</a></li>
+        <li><a href="#private">Privacy</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><span class="pill" aria-disabled="true" title="The app is not available yet">Coming soon</span></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hex-layer"></div>
+    <div class="hex-layer two"></div>
+  </div>
+  <div class="rays" aria-hidden="true"></div>
+  <span class="bokeh" style="--s:90px;--x:6%;--y:68%;--b:7px;--t:16s;--dx:30px;--dy:-60px" aria-hidden="true"></span>
+  <span class="bokeh" style="--s:46px;--x:46%;--y:14%;--b:3px;--t:11s;--c:rgba(255,209,102,.8)" aria-hidden="true"></span>
+  <span class="bokeh" style="--s:140px;--x:84%;--y:72%;--b:12px;--t:20s;--dx:-30px;--dy:-30px" aria-hidden="true"></span>
+  <span class="bokeh" style="--s:30px;--x:30%;--y:84%;--b:1px;--t:9s;--c:rgba(255,248,236,.9)" aria-hidden="true"></span>
+  <span class="bokeh" style="--s:64px;--x:92%;--y:12%;--b:5px;--t:13s;--c:rgba(220,239,247,.7)" aria-hidden="true"></span>
+  <canvas id="pollen" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow fade-in" style="--d:.3s"><span class="dot" aria-hidden="true"></span>Coming soon &middot; iPhone &amp; Android</p>
+      <h1 id="hero-title" aria-label="Every sound counts.">
+        <span class="w" aria-hidden="true"><span style="--i:0">Every</span></span>
+        <span class="w" aria-hidden="true"><span style="--i:1">sound</span></span><br>
+        <span class="w" aria-hidden="true"><span class="accent" style="--i:2">counts.</span></span>
+      </h1>
+      <p class="lead fade-in" style="--d:1.3s">A calm, playful phonics game for children aged 5 to 9, made with dyslexic learners in mind. Trace a sound, build a word, say it out loud, and fill the honeycomb.</p>
+      <div class="fade-in" style="--d:1.6s">
+        <div class="stores" role="group" aria-label="App store downloads, coming soon">
+          <span title="Coming soon"><button class="store" type="button" disabled aria-disabled="true" aria-describedby="soon-hero">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M4.5 2.6c-.3.3-.5.8-.5 1.4v16c0 .6.2 1.1.5 1.4l.1.1 9-9v-.2l-9-9zM15.6 14.3l-3-3 3-3 3.9 2.2c1.100.6 1.100 1.600 0 2.200zM13.700 12.400 4.600 21.400c.4.400 1 .4 1.700.1zM13.700 10.500 6.300 2.600c-.7-.3-1.300-.3-1.700.1z"/></svg>
+            <span><small>Get it on</small><strong>Google Play</strong></span><em class="soon">Coming soon</em>
+          </button></span>
+          <span title="Coming soon"><button class="store" type="button" disabled aria-disabled="true" aria-describedby="soon-hero">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M16.400 12.600c0-2.300 1.900-3.400 2-3.500-1.100-1.600-2.800-1.800-3.400-1.800-1.400-.1-2.800.9-3.500.9-.7 0-1.800-.8-3-.8-1.500 0-3 .9-3.800 2.300-1.600 2.800-.4 6.900 1.200 9.200.8 1.100 1.700 2.300 2.900 2.300 1.200 0 1.600-.7 3-.7s1.800.7 3 .7c1.300 0 2.100-1.100 2.800-2.200.9-1.300 1.300-2.500 1.300-2.600 0 0-2.500-1-2.500-3.800zM14.200 5.900c.6-.8 1.100-1.800 1-2.900-.9 0-2 .6-2.700 1.400-.6.700-1.100 1.800-1 2.800 1 .1 2-.5 2.700-1.300z"/></svg>
+            <span><small>Download on the</small><strong>App Store</strong></span><em class="soon">Coming soon</em>
+          </button></span>
+        </div>
+        <p class="soon-note" id="soon-hero">Not available yet. These buttons switch on at launch.</p>
+      </div>
+    </div>
+
+    <div class="hero-stage" aria-hidden="true">
+      <div class="glow"></div>
+      <div class="phone-wrap">
+        <div class="phone"><div class="screen">
+          <div class="scr is-active">
+            <div class="back"></div>
+            <div class="dots"><i class="now"></i><i></i><i></i><i></i></div>
+            <div class="mini-sona" data-sona="happy"></div>
+            <div class="bubble">This sound is sh.<br>Trace it with your finger!</div>
+            <div class="pillrow"><span class="pillbtn teal">Hear it again</span><span class="pillbtn">Show me</span></div>
+            <div class="pad"><div class="cell"></div>
+              <svg viewBox="0 0 210 242" class="js-trace">
+                <path class="guide" d="M82 92C74 76 40 74 38 96C36 114 84 120 82 146C80 170 40 168 30 148"/>
+                <path class="guide" d="M112 64L112 168"/>
+                <path class="guide" d="M112 118C118 96 164 94 166 126L166 168"/>
+                <path class="ink" d="M82 92C74 76 40 74 38 96C36 114 84 120 82 146C80 170 40 168 30 148"/>
+                <path class="ink" d="M112 64L112 168"/>
+                <path class="ink" d="M112 118C118 96 164 94 166 126L166 168"/>
+                <circle class="dot" r="9"/>
+              </svg>
+            </div>
+            <div class="skip-btn">Skip tracing</div>
+          </div>
+        </div></div>
+      </div>
+      <svg class="trail" viewBox="0 0 660 40"><path d="M0 30C160-10 330 50 650 14" fill="none" stroke="#FFF8EC" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 14"/></svg>
+      <div class="fly" data-sona="happy"></div>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#why" aria-label="Scroll to learn more"><i></i>Scroll</a>
+</section>
+
+<!-- ===================== SOUND RIBBON ===================== -->
+<div class="ribbon" aria-label="Sounds children learn: sh, s, a, t, p, i, n, d, ch, th, m, o">
+  <div class="ribbon-track">
+    <span class="rt">sh</span><span class="rt">s</span><span class="rt">a</span><span class="rt">t</span><span class="rt">p</span><span class="rt">i</span><span class="rt">n</span><span class="rt">d</span><span class="rt">ch</span><span class="rt">th</span><span class="rt">m</span><span class="rt">o</span>
+    <span class="rt" aria-hidden="true">sh</span><span class="rt" aria-hidden="true">s</span><span class="rt" aria-hidden="true">a</span><span class="rt" aria-hidden="true">t</span><span class="rt" aria-hidden="true">p</span><span class="rt" aria-hidden="true">i</span><span class="rt" aria-hidden="true">n</span><span class="rt" aria-hidden="true">d</span><span class="rt" aria-hidden="true">ch</span><span class="rt" aria-hidden="true">th</span><span class="rt" aria-hidden="true">m</span><span class="rt" aria-hidden="true">o</span>
+  </div>
+</div>
+
+<!-- ===================== WHY ===================== -->
+<section class="section" id="why" aria-labelledby="why-k">
+  <div class="wrap">
+    <p class="kicker" id="why-k">Why Sonabee</p>
+    <p class="big-words" data-split>For a child with dyslexia, a page of letters can feel like a maze. Sonabee slows everything down to <em>one sound at a time</em>: traced, built, spoken and celebrated, in a world with no red crosses, no clocks and nobody left behind.</p>
+  </div>
+</section>
+
+<!-- ===================== HOW IT WORKS ===================== -->
+<section class="section how" id="how" aria-labelledby="how-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="kicker">How a lesson works</p>
+      <h2 id="how-h">Four small steps. One big smile.</h2>
+    </div>
+    <div class="story-grid story">
+      <div class="steps">
+        <article class="step is-active" data-step="0">
+          <div class="num" aria-hidden="true">1</div>
+          <h3>Trace the sound</h3>
+          <p>Sona says the sound and a dotted path appears. Your child traces it with a finger. Wobbly lines are fine: the shape and direction matter, and Sona shows the way if it&rsquo;s tricky.</p>
+        </article>
+        <article class="step" data-step="1">
+          <div class="num" aria-hidden="true">2</div>
+          <h3>Build the word</h3>
+          <p>Sounds become honeycomb tiles. Pick the right ones to fill the gaps and build the word, like <strong>ship</strong>, <strong>map</strong> or <strong>pot</strong>. Tap any tile to hear it, as often as you like.</p>
+        </article>
+        <article class="step" data-step="2">
+          <div class="num" aria-hidden="true">3</div>
+          <h3>Say it out loud</h3>
+          <p>Sona listens while your child says the word. A near miss earns a gentle hint, and after a few tries Sona says it together with them. The listening happens on the phone and nothing is recorded.</p>
+        </article>
+        <article class="step" data-step="3">
+          <div class="num" aria-hidden="true">4</div>
+          <h3>Fill the honeycomb</h3>
+          <p>Every finished word adds a cell of honey and fills a jar for that sound. If a sound needed extra help, it comes back later for one more go, with no fuss.</p>
+        </article>
+      </div>
+
+      <div class="story-phone" aria-hidden="true">
+        <div class="phone-wrap">
+          <div class="phone"><div class="screen">
+
+            <!-- 1 Trace -->
+            <div class="scr is-active" data-scr="0">
+              <div class="back"></div>
+              <div class="dots"><i class="now"></i><i></i><i></i><i></i></div>
+              <div class="mini-sona" data-sona="happy"></div>
+              <div class="bubble">This sound is sh.<br>Trace it with your finger!</div>
+              <div class="pillrow"><span class="pillbtn teal">Hear it again</span><span class="pillbtn">Show me</span></div>
+              <div class="pad"><div class="cell"></div>
+                <svg viewBox="0 0 210 242" class="js-trace">
+                  <path class="guide" d="M82 92C74 76 40 74 38 96C36 114 84 120 82 146C80 170 40 168 30 148"/>
+                  <path class="guide" d="M112 64L112 168"/>
+                  <path class="guide" d="M112 118C118 96 164 94 166 126L166 168"/>
+                  <path class="ink" d="M82 92C74 76 40 74 38 96C36 114 84 120 82 146C80 170 40 168 30 148"/>
+                  <path class="ink" d="M112 64L112 168"/>
+                  <path class="ink" d="M112 118C118 96 164 94 166 126L166 168"/>
+                  <circle class="dot" r="9"/>
+                </svg>
+              </div>
+              <div class="skip-btn">Skip tracing</div>
+            </div>
+
+            <!-- 2 Build -->
+            <div class="scr" data-scr="1">
+              <div class="back"></div>
+              <div class="dots"><i class="done"></i><i class="now"></i><i></i><i></i></div>
+              <p class="h-title">Build the word you hear</p>
+              <div class="build-row">
+                <div class="round"><svg viewBox="0 0 24 24" fill="#0F1A2A"><path d="M4 9v6h4l5 4V5L8 9H4zM16.500 8.500a5 5 0 0 1 0 7l-1.300-1.300a3.200 3.200 0 0 0 0-4.400zM19 6l-1.300 1.300a7 7 0 0 1 0 9.400L19 18a9 9 0 0 0 0-12z"/></svg></div>
+                <div class="pic"><svg viewBox="0 0 70 70"><circle cx="54" cy="14" r="6" fill="#FFD166"/><path d="M33 8v34M33 10l-16 28h16zM35 14l14 24H35z" fill="#fff" stroke="#1F2A44" stroke-width="2.200" stroke-linejoin="round"/><path d="M8 42h54l-8 14H17z" fill="#C77F0A" stroke="#1F2A44" stroke-width="2.200" stroke-linejoin="round"/><circle cx="24" cy="48" r="2" fill="#DCEFF7" stroke="#1F2A44"/><circle cx="35" cy="48" r="2" fill="#DCEFF7" stroke="#1F2A44"/><circle cx="46" cy="48" r="2" fill="#DCEFF7" stroke="#1F2A44"/><path d="M6 62q6-6 12 0t12 0 12 0 12 0" fill="none" stroke="#2A9D8F" stroke-width="3" stroke-linecap="round"/></svg></div>
+              </div>
+              <!-- empty slots -->
+              <svg class="slot-svg" style="left:102px;top:222px" viewBox="0 0 76 88"><path d="M38 3 73 23v42L38 85 3 65V23z" fill="none" stroke="#5B6784" stroke-width="2.500" stroke-dasharray="7 6" stroke-linejoin="round"/></svg>
+              <svg class="slot-svg" style="left:186px;top:222px" viewBox="0 0 76 88"><path d="M38 3 73 23v42L38 85 3 65V23z" fill="none" stroke="#5B6784" stroke-width="2.500" stroke-dasharray="7 6" stroke-linejoin="round"/></svg>
+              <div class="hex tile sh" style="left:18px;top:222px"><span>sh</span></div>
+              <!-- tray -->
+              <div class="hex tile sky fly-a" style="left:10px;top:420px;--dx:99px;--dy:-190px;--dl:.5s"><span>i</span></div>
+              <div class="hex tile fly-b" style="left:76px;top:420px;--dx:117px;--dy:-190px;--dl:1.2s"><span>p</span></div>
+              <div class="hex tile sky" style="left:142px;top:420px"><span>a</span></div>
+              <div class="hex tile" style="left:208px;top:420px"><span>d</span></div>
+              <div class="done-btn">Done</div>
+            </div>
+
+            <!-- 3 Say -->
+            <div class="scr" data-scr="2">
+              <div class="back"></div>
+              <div class="dots"><i class="done"></i><i class="done"></i><i class="now"></i><i></i></div>
+              <div class="say-word">ship</div>
+              <div class="say-parts"><span class="part p1">sh</span> &middot; <span class="part p2">i</span> &middot; <span class="part p3">p</span></div>
+              <div class="say-sona" data-sona="listen"></div>
+              <div class="mic"><span class="ring"></span><span class="ring b"></span><span class="ring c"></span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="#0F1A2A" stroke-width="2.400" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3" fill="#0F1A2A"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></div>
+              <div class="say-cap"><span class="c1">Listening&hellip;</span><span class="c2">Great saying!</span></div>
+              <div class="say-bar">Help me hear it first</div>
+            </div>
+
+            <!-- 4 Complete -->
+            <div class="scr celebrate" data-scr="3">
+              <div class="cel-sona" data-sona="celebrate"></div>
+              <div class="cel-title">You built &lsquo;ship&rsquo;!</div>
+              <div class="cel-card">
+                <h4>Another cell of honey!</h4>
+                <div class="comb"><i class="on"></i><i class="on"></i><i class="new"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+              <div class="btn-dark">Next word</div>
+            </div>
+
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CALM BY DESIGN ===================== -->
+<section class="section features" id="calm" aria-labelledby="calm-h">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="kicker">Calm by design</p>
+      <h2 id="calm-h">Everything a tired, brave reader needs. Nothing they don&rsquo;t.</h2>
+      <p>Learning to read can be hard work. Sonabee removes the things that make it harder.</p>
+    </div>
+    <div class="cards">
+      <article class="card reveal" style="--d:0s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M5 20 12 4l7 16M8 14h8"/></svg></div><h3>Type made for tired eyes</h3><p>Lexend and Atkinson Hyperlegible, two typefaces built for easy reading. Grown-ups tune text size, letter spacing and background tint.</p></article>
+      <article class="card reveal" style="--d:.08s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.400-7-10a4 4 0 0 1 7-2.400A4 4 0 0 1 19 10c0 5.600-7 10-7 10z"/></svg></div><h3>Never a red cross</h3><p>Only kind words: &ldquo;Nearly!&rdquo; and &ldquo;Let&rsquo;s try again.&rdquo; A slip is never a failure here.</p></article>
+      <article class="card reveal" style="--d:.16s"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2M4 4l16 16"/></svg></div><h3>No clocks, no pressure</h3><p>No timers, no countdowns, no racing. Children go at their own pace, as slowly as they like.</p></article>
+      <article class="card reveal" style="--d:.24s"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M6.300 6.300l3.500 3.500M14.200 14.200l3.500 3.500M17.700 6.300l-3.500 3.500M9.800 14.200l-3.500 3.500"/></svg></div><h3>Nobody gets stuck</h3><p>If a step is tricky, Sona shows the way or says it together with your child. Every screen has a friendly way forward.</p></article>
+      <article class="card reveal" style="--d:.32s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4zM16.500 9a4 4 0 0 1 0 6M19 6.500a8 8 0 0 1 0 11"/></svg></div><h3>Sounds on tap</h3><p>Sounds and words only play when your child taps them, so there are never surprise noises. Sona&rsquo;s instructions can be read aloud, or switched off.</p></article>
+      <article class="card reveal" style="--d:.4s"><div class="ico"><svg viewBox="0 0 24 24"><path d="M2 9a15 15 0 0 1 20 0M5 12.500a10 10 0 0 1 14 0M8.500 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19" r="1"/><path d="M3 3l18 18"/></svg></div><h3>Works without Wi-Fi</h3><p>Everything is on the phone. No sign-in, no connection needed. Perfect for the back seat or the waiting room.</p></article>
+    </div>
+
+    <div class="comfort reveal" id="comfort">
+      <div>
+        <p class="kicker" style="color:var(--bee)">Try it: Comfort settings</p>
+        <h3>Every reader is different, so the page bends to fit.</h3>
+        <p>Grown-ups can change the text size, spacing and background colour, and the child&rsquo;s screens change right away. Try it on the word below.</p>
+        <div class="ctrl"><label for="size">Text size</label><input type="range" id="size" min="44" max="130" value="80"></div>
+        <div class="ctrl"><span class="lbl" id="sp-l">Letter spacing</span>
+          <div class="seg" role="group" aria-labelledby="sp-l">
+            <button type="button" data-sp="0" aria-pressed="true">Normal</button>
+            <button type="button" data-sp="0.12" aria-pressed="false">Wide</button>
+            <button type="button" data-sp="0.26" aria-pressed="false">Wider</button>
+          </div></div>
+        <div class="ctrl"><span class="lbl" id="tint-l">Background tint</span>
+          <div class="tints" role="group" aria-labelledby="tint-l">
+            <button type="button" style="--c:#FFF8EC" data-tint="#FFF8EC" aria-pressed="true" aria-label="Cream"></button>
+            <button type="button" style="--c:#DCEFF7" data-tint="#DCEFF7" aria-pressed="false" aria-label="Sky"></button>
+            <button type="button" style="--c:#E3F4EC" data-tint="#E3F4EC" aria-pressed="false" aria-label="Mint"></button>
+            <button type="button" style="--c:#FDE8DC" data-tint="#FDE8DC" aria-pressed="false" aria-label="Peach"></button>
+          </div></div>
+      </div>
+      <div class="preview" id="preview" role="img" aria-label="Live preview of the word ship"><span id="word" aria-hidden="true">ship</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRIVATE BY DESIGN ===================== -->
+<section class="section private on-dark" id="private" aria-labelledby="priv-h">
+  <div class="stars" aria-hidden="true"></div>
+  <div class="wrap" style="position:relative">
+    <div class="sec-head reveal">
+      <p class="kicker">Private by design</p>
+      <h2 id="priv-h">Sona listens. Nobody else does.</h2>
+      <p>When your child says a word, it is checked on the phone itself. The sound is never saved and never sent anywhere. Not to us, not to anyone.</p>
+    </div>
+
+    <div class="flow reveal" role="group" aria-label="How voice stays on the device">
+      <div class="node"><div class="ni"><svg viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></div><h3>Your child says it</h3><p>Only when they tap the microphone.</p></div>
+      <div class="wire" aria-hidden="true"></div>
+      <div class="node phone-n"><div class="ni"><svg viewBox="0 0 24 24"><rect x="7" y="2.500" width="10" height="19" rx="2.500"/><path d="M10.500 18.500h3"/></svg></div><h3>The phone checks it</h3><p>On-device. Then the sound is gone.</p></div>
+      <div class="wire cut" aria-hidden="true"></div>
+      <div class="node cloud"><div class="ni"><svg viewBox="0 0 24 24"><path d="M7 18h10a4 4 0 0 0 .8-7.900A6 6 0 0 0 6.300 9.500 4.300 4.300 0 0 0 7 18z"/><path d="M3 3l18 18"/></svg></div><h3>No cloud</h3><p>Nothing leaves the phone.</p></div>
+    </div>
+
+    <ul class="promises">
+      <li class="reveal"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><div><strong>No accounts</strong><span>No sign-up and no email address. Your child&rsquo;s first name stays on the phone.</span></div></li>
+      <li class="reveal" style="--d:.08s"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M5.600 5.600l12.800 12.800"/></svg><div><strong>No ads, no trackers</strong><span>No analytics, no advertising, and nothing that follows your child around.</span></div></li>
+      <li class="reveal" style="--d:.16s"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><div><strong>Grown-ups hold the keys</strong><span>Listening can be switched off, and one tap erases everything. Settings sit behind a quick grown-ups question.</span></div></li>
+    </ul>
+    <a class="btn-ghost" href="privacy.html">Read the full Privacy Policy <span aria-hidden="true">&rarr;</span></a>
+  </div>
+</section>
+
+<!-- ===================== FOR GROWN-UPS ===================== -->
+<section class="section grownups" id="grownups" aria-labelledby="gu-h">
+  <div class="wrap gu-grid">
+    <div class="reveal">
+      <p class="kicker">For grown-ups</p>
+      <h2 id="gu-h" style="font-size:clamp(2.2rem,5vw,3.8rem)">See the progress. Skip the pressure.</h2>
+      <p style="font-size:1.25rem;color:var(--ink-soft)">A calm dashboard shows how much practice happened this week and which sounds could use a little more help, in plain words rather than scores.</p>
+      <ul class="ticks">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5 11-11"/></svg><span>Minutes practised each day, all week</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5 11-11"/></svg><span>Sounds that need a little help, shown gently</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5 11-11"/></svg><span>Everything stays on your phone, and you can reset it any time</span></li>
+      </ul>
+    </div>
+    <div class="dash reveal" id="dash" role="img" aria-label="Example grown-ups dashboard: practice minutes for the week and sounds that need a little help">
+      <header><h3>Grown-ups</h3><span>Example</span></header>
+      <div class="stat-row">
+        <div class="stat"><small>Practice time</small><b>46<i>min</i></b></div>
+        <div class="stat"><small>Sounds mastered</small><b>3<i>of 12</i></b></div>
+      </div>
+      <div class="bars" aria-hidden="true">
+        <div class="bar"><b style="--v:42;--i:0"></b>Mon</div>
+        <div class="bar"><b style="--v:78;--i:1"></b>Tue</div>
+        <div class="bar"><b class="zero" style="--i:2"></b>Wed</div>
+        <div class="bar"><b style="--v:58;--i:3"></b>Thu</div>
+        <div class="bar"><b style="--v:100;--i:4"></b>Fri</div>
+        <div class="bar"><b style="--v:34;--i:5"></b>Sat</div>
+        <div class="bar"><b class="zero" style="--i:6"></b>Sun</div>
+      </div>
+      <div class="working" aria-hidden="true">
+        <h4>Working on</h4>
+        <div class="wrow"><span>sh</span><span>Getting there</span></div><div class="meter"><i style="--w:52%"></i></div>
+        <div class="wrow"><span>th</span><span>Needs a little help</span></div><div class="meter" style="margin-bottom:0"><i style="--w:24%"></i></div>
+      </div>
+      <p class="note">Sample data for illustration. Sonabee is a learning tool and does not diagnose dyslexia or any other condition.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="section faq" id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="sec-head reveal"><p class="kicker">Questions</p><h2 id="faq-h">Good to know</h2></div>
+    <div class="faq-list reveal">
+      <details><summary>Who is Sonabee for?</summary><p>Children aged 5 to 9 who are learning to read, especially children who find it hard, such as those with dyslexia. A grown-up sets it up in a minute and chooses a comfortable starting text size.</p></details>
+      <details><summary>When can I get it?</summary><p>Sonabee is coming soon to Google Play and the App Store. The download buttons on this page are switched off until launch.</p></details>
+      <details><summary>How much will it cost?</summary><p>Pricing has not been announced. When the app launches, the price will be shown clearly in the store listing before you download.</p></details>
+      <details><summary>Does it record my child?</summary><p>No. Sona only listens while your child taps the microphone, and only if you agreed during setup. The speech is checked on the phone, and the audio is never recorded, saved or sent anywhere. You can switch listening off at any time in Comfort settings, and Sona will use a simple &ldquo;I said it!&rdquo; button instead.</p></details>
+      <details><summary>Does it need the internet?</summary><p>No. Sonabee works fully offline, so there is no sign-in and no connection needed.</p></details>
+      <details><summary>Can it tell if my child has dyslexia?</summary><p>No. Sonabee is a learning tool, not a medical or diagnostic product. If you are worried about your child&rsquo;s reading, please talk to their teacher or a reading specialist.</p></details>
+      <details><summary>What accent does Sona speak with?</summary><p>Sona currently speaks in US English.</p></details>
+      <details><summary>What can a grown-up see in the app?</summary><p>Behind a quick grown-ups question there is a dashboard of the week&rsquo;s practice, plus Comfort settings for text size, spacing, colour, voice speed, tracing help and listening. Everything is stored on your phone only.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== DOWNLOAD ===================== -->
+<section class="section cta on-honey" id="download" aria-labelledby="dl-h">
+  <div class="hex-layer" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="cta-sona" data-sona="happy"></div>
+    <h2 id="dl-h" class="reveal">Sona is almost ready.</h2>
+    <p class="lead reveal">Sonabee is on its way to iPhone and Android. The buttons below will switch on at launch.</p>
+    <div class="stores reveal" role="group" aria-label="App store downloads, coming soon">
+      <span title="Coming soon"><button class="store" type="button" disabled aria-disabled="true" aria-describedby="soon-cta">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M4.500 2.600c-.3.300-.5.800-.5 1.400v16c0 .600.200 1.100.500 1.400l.1.100 9-9v-.2l-9-9zM15.600 14.300l-3-3 3-3 3.900 2.200c1.100.600 1.100 1.600 0 2.200zM13.700 12.400 4.600 21.400c.4.400 1 .4 1.700.1zM13.700 10.500 6.300 2.600c-.7-.3-1.300-.3-1.700.1z"/></svg>
+        <span><small>Get it on</small><strong>Google Play</strong></span><em class="soon">Coming soon</em>
+      </button></span>
+      <span title="Coming soon"><button class="store" type="button" disabled aria-disabled="true" aria-describedby="soon-cta">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M16.400 12.600c0-2.300 1.900-3.400 2-3.500-1.100-1.600-2.800-1.800-3.400-1.800-1.400-.1-2.800.9-3.500.9-.7 0-1.800-.8-3-.8-1.500 0-3 .9-3.800 2.300-1.600 2.800-.4 6.900 1.200 9.200.8 1.100 1.700 2.300 2.900 2.300 1.200 0 1.600-.7 3-.7s1.800.7 3 .7c1.300 0 2.100-1.100 2.800-2.200.9-1.300 1.300-2.500 1.300-2.600 0 0-2.500-1-2.500-3.800zM14.200 5.900c.6-.8 1.100-1.800 1-2.900-.9 0-2 .6-2.700 1.400-.6.700-1.100 1.800-1 2.800 1 .1 2-.5 2.700-1.300z"/></svg>
+        <span><small>Download on the</small><strong>App Store</strong></span><em class="soon">Coming soon</em>
+      </button></span>
+    </div>
+    <p class="soon-note" id="soon-cta">Not available yet. Check back soon.</p>
+  </div>
+</section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="row">
+      <a class="brand" href="#top"><img src="assets/img/icon-192.png" alt="" width="42" height="42">sonabee</a>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <small>&copy; <span id="yr">2026</span> Sonabee. All rights reserved. Sonabee is a learning tool and is not a medical device. It does not diagnose, treat or cure dyslexia or any other condition. Google Play and the Google Play logo are trademarks of Google LLC. Apple and the App Store are trademarks of Apple Inc. This site uses no cookies and no trackers.</small>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
